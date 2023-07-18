@@ -2,7 +2,7 @@ const express = require('express');
 const fetch = import('node-fetch');
 
 const app = express();
-const port = 3000;
+const port = 3500;
 
 app.get('/github-proxy', async (req, res) => {
   const url = req.query.url;
