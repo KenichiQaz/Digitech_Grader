@@ -5,9 +5,9 @@ document.getElementById("validationForm").addEventListener("submit", function (e
 });
 
 function validateFiles(githubLink) {
-  var htmlFileUrl = `http://localhost:3500/github-proxy?url=${githubLink}/blob/master/index.html`;
-  var cssFileUrl = `http://localhost:3500/github-proxy?url=${githubLink}/blob/master/style.css`;
-  var jsFileUrl = `http://localhost:3500/github-proxy?url=${githubLink}/blob/master/script.js`;
+  var htmlFileUrl = `http://localhost:3500/github-proxy?url=${githubLink}/master/index.html`;
+  var cssFileUrl = `http://localhost:3500/github-proxy?url=${githubLink}/master/style.css`;
+  var jsFileUrl = `http://localhost:3500/github-proxy?url=${githubLink}/master/script.js`;
 
   // Fetch the files using the updated URLs
   fetchFile(htmlFileUrl, validateHTML);
